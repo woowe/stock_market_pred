@@ -1,0 +1,6 @@
+[package]
+name = "stock_market_pred"
+version = "0.1.0"
+authors = ["jason"]
+
+[dependencies]
