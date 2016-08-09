@@ -2,4 +2,4 @@
 // reference (rust modules): http://rustbyexample.com/mod/split.html
 
 // included the file yahoo_finance_enums.rs
-mod yahoo_finance_enums;
+pub mod yahoo_finance_enums;

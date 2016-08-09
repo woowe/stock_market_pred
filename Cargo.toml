@@ -3,4 +3,12 @@ name = "stock_market_pred"
 version = "0.1.0"
 authors = ["jason"]
 
+[lib]
+name = "stock_market_pred"
+path = "src/lib.rs"
+
+[[bin]]
+name = "example"
+path = "example.rs"
+
 [dependencies]

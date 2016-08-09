@@ -1,5 +1,8 @@
+// Enums for Yahoo Finance api
 
-enum Pricing {
+
+
+pub enum Pricing {
     Ask,
     Bid,
     AskRealtime,
@@ -8,14 +11,14 @@ enum Pricing {
     Open,
 }
 
-enum Dividends {
+pub enum Dividends {
     DividendYield,
     DividendPerShare,
     DividendPayDate,
     ExDividendDate,
 }
 
-enum Date {
+pub enum Date {
     Change,
     ChangeAndPercentChange,
     ChangeRealtime,
@@ -26,7 +29,7 @@ enum Date {
     LastTradeTime,
 }
 
-enum Averages {
+pub enum Averages {
     AfterHoursChangeRealtime,
     Commission,
     DaysLow,
@@ -43,7 +46,7 @@ enum Averages {
     TwoHundredDayMovingAverage,
 }
 
-enum Misc {
+pub enum Misc {
     DaysValueChange,
     HoldingsGainPercent,
     DaysValueChangeRealtime,
@@ -64,7 +67,7 @@ enum Misc {
     Revenue,
 }
 
-enum WeekPricing {
+pub enum WeekPricing {
     FiftyTwoWeekHigh,
     FiftyTwoWeekLow,
     ChangeFrom52WeekLow,
@@ -74,7 +77,7 @@ enum WeekPricing {
     FiftyTwoWeekRange,
 }
 
-enum SymbolInfo {
+pub enum SymbolInfo {
     MoreInfo,
     MarketCapitalization,
     MarketCapRealTime,
@@ -87,7 +90,7 @@ enum SymbolInfo {
     SharesOutstanding,
 }
 
-enum Volume {
+pub enum Volume {
     Volume,
     AskSize,
     BidSize,
@@ -95,7 +98,7 @@ enum Volume {
     AverageDailyVolume,
 }
 
-enum Ratios {
+pub enum Ratios {
     EarningsPerShare,
     EPSEstimateCurrentYear,
     EPSEstimateNextYear,
@@ -111,7 +114,7 @@ enum Ratios {
     ShortRatio,
 }
 
-trait YahooApiOption {
+pub trait YahooApiOption {
     fn translate(&self) -> &'static str;
 }
 
